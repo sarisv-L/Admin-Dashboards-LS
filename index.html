@@ -7,65 +7,297 @@
     <title>Admin-Dashboards-LS</title>
   </head>
   <body>
-    <header>
-      <div class="header first">
+    <!-- HEADER -->
+    <div class="main-container">
+      <header class="header">
         <div class="searchbar">
-          <input type="text" placeholder="Search..." />
           <img src="/Icons/search.svg" width="25px" alt="search icon" />
+          <input type="text" placeholder="Search..." />
         </div>
         <div class="user">
-          <img src="/Icons/bell.svg" alt="bell icon" width="25px" />
+          <img src="/Icons/bell-outline.svg" alt="bell icon" width="35px" />
           <img src="https://picsum.photos/85/32" alt="Profile Image" />
-            <div class="user-name">
-                <h4>John Doe</h4>
-               
-      </div>
-      </div>
-    </header>
-    <div class="sidebar">
-      <div class="sidebar-header">
-        <h2>Dashboard</h2>
-      </div>
-      <ul class="sidebar-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Messages</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Tasks</a></li>
-        <li><a href="#">Communities</a></li>
-
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Privacy</a></li>
-      </ul>
-    </div>
-
-    <section class="main-content">
-      <h3>Your Projects</h3>
-      <div class="project-1">
-        <h4>Super Cool Project</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet.
-        </p>
-        <div class="icons">
-          <img
-            src="/Icons/star-plus-outline.svg"
-            width="25px"
-            alt="star icon"
-          />
-          <img src="/Icons/eye-plus-outline.svg" width="25px" alt="eye icon" />
-          <img src="/Icons/source-branch.svg" width="25px" alt="branch icon" />
+          <div class="user-name">
+            <h5>Max Mustermann</h5>
+          </div>
         </div>
-      </div>
-      <div class="project-2"></div>
-      <div class="project-3"></div>
-      <div class="project-4"></div>
-      <div class="project-5"></div>
-      <div class="project-6"></div>
-    </section>
+        <div class="account">
+          <img src="https://picsum.photos/85/32" alt="Profile Image" />
+          <div class="account-name">
+            <p>
+              Hi there, <br />
+              <strong>Max Mustermann(@max)</strong>
+            </p>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn btn-primary">New</button>
+          <button class="btn btn-secondary">Upload</button>
+          <button class="btn btn-tertiary">Share</button>
+        </div>
+      </header>
+      <!-- SIDEBAR -->
+      <section class="sidebar">
+        <div class="side-cont">
+          <div class="sidebar-header">
+            <h3>Dashboard</h3>
+          </div>
+          <div class="navigation">
+            <ul class="sidebar-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Messages</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Tasks</a></li>
+              <li><a href="#">Communities</a></li>
+            </ul>
+
+            <div class="settings">
+              <ul>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MAIN CONTENT -->
+
+      <section class="content">
+        <div class="your-projects">
+          <div class="title"><h3>Your Projects</h3></div>
+          <div class="project-cards">
+            <div class="project-1 card">
+              <h4>Super Cool Project</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo.
+              </p>
+              <div class="icons">
+                <img
+                  src="/Icons/star-plus-outline.svg"
+                  width="25px"
+                  alt="star icon"
+                />
+                <img
+                  src="/Icons/eye-plus-outline.svg"
+                  width="25px"
+                  alt="eye icon"
+                />
+                <img
+                  src="/Icons/source-branch.svg"
+                  width="25px"
+                  alt="branch icon"
+                />
+              </div>
+            </div>
+            <div class="project-2 card">
+              <h4>Super Cool Project</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo.
+              </p>
+              <div class="icons">
+                <img
+                  src="/Icons/star-plus-outline.svg"
+                  width="25px"
+                  alt="star icon"
+                />
+                <img
+                  src="/Icons/eye-plus-outline.svg"
+                  width="25px"
+                  alt="eye icon"
+                />
+                <img
+                  src="/Icons/source-branch.svg"
+                  width="25px"
+                  alt="branch icon"
+                />
+              </div>
+            </div>
+            <div class="project-3 card">
+              <h4>Super Cool Project</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo.
+              </p>
+              <div class="icons">
+                <img
+                  src="/Icons/star-plus-outline.svg"
+                  width="25px"
+                  alt="star icon"
+                />
+                <img
+                  src="/Icons/eye-plus-outline.svg"
+                  width="25px"
+                  alt="eye icon"
+                />
+                <img
+                  src="/Icons/source-branch.svg"
+                  width="25px"
+                  alt="branch icon"
+                />
+              </div>
+            </div>
+            <div class="project-4 card">
+              <h4>Super Cool Project</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo.
+              </p>
+              <div class="icons">
+                <img
+                  src="/Icons/star-plus-outline.svg"
+                  width="25px"
+                  alt="star icon"
+                />
+                <img
+                  src="/Icons/eye-plus-outline.svg"
+                  width="25px"
+                  alt="eye icon"
+                />
+                <img
+                  src="/Icons/source-branch.svg"
+                  width="25px"
+                  alt="branch icon"
+                />
+              </div>
+            </div>
+            <div class="project-5 card">
+              <h4>Super Cool Project</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo.
+              </p>
+              <div class="icons">
+                <img
+                  src="/Icons/star-plus-outline.svg"
+                  width="25px"
+                  alt="star icon"
+                />
+                <img
+                  src="/Icons/eye-plus-outline.svg"
+                  width="25px"
+                  alt="eye icon"
+                />
+                <img
+                  src="/Icons/source-branch.svg"
+                  width="25px"
+                  alt="branch icon"
+                />
+              </div>
+            </div>
+            <div class="project-6 card">
+              <h4>Super Cool Project</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo.
+              </p>
+              <div class="icons">
+                <img
+                  src="/Icons/star-plus-outline.svg"
+                  width="25px"
+                  alt="star icon"
+                />
+                <img
+                  src="/Icons/eye-plus-outline.svg"
+                  width="25px"
+                  alt="eye icon"
+                />
+                <img
+                  src="/Icons/source-branch.svg"
+                  width="25px"
+                  alt="branch icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ANNOUNCEMENTS -->
+
+        <div class="announcements">
+          <div class="title">
+            <h3>Announcements</h3>
+          </div>
+          <div class="cont card">
+            <div class="announcement-1 announce">
+              <h5>Announcement 1</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor.
+              </p>
+            </div>
+            <div class="announcement-2 announce">
+              <h5>Announcement 1</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt.
+              </p>
+            </div>
+            <div class="announcement-3 announce">
+              <h5>Announcement 1</h5>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+            </div>
+          </div>
+        </div>
+        <div class="trending">
+          <div class="title">
+            <h3>Trending</h3>
+          </div>
+          <div class="cont card">
+            <div class="trending-1 trend">
+              <img src="https://picsum.photos/85/32" alt="Profile Image" />
+              <div class="account-name">
+                <p>
+                  @tegan <br />
+                  World Peace Builder
+                </p>
+              </div>
+            </div>
+            <div class="trending-2 trend">
+              <img src="https://picsum.photos/85/32" alt="Profile Image" />
+              <div class="account-name">
+                <p>
+                  @tegan <br />
+                  World Peace Builder
+                </p>
+              </div>
+            </div>
+            <div class="trending-3 trend">
+              <img src="https://picsum.photos/85/32" alt="Profile Image" />
+              <div class="account-name">
+                <p>
+                  @tegan <br />
+                  World Peace Builder
+                </p>
+              </div>
+            </div>
+            <div class="trending-4 trend">
+              <img src="https://picsum.photos/85/32" alt="Profile Image" />
+              <div class="account-name">
+                <p>
+                  @tegan <br />
+                  World Peace Builder
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
