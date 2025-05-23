@@ -33,6 +33,9 @@ button {
   background: rgb(0, 149, 255);
   cursor: pointer;
 }
+header {
+  padding-bottom: 30px;
+}
 .main-container {
   display: grid;
   grid-template-columns: 190px 1000px;
@@ -111,24 +114,21 @@ button {
 
 /* CONTENT */
 .content {
-  grid-area: content;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  /* min-height: 100vh; */
+  display: flex;
   gap: 20px;
   padding: 20px;
   background: grey;
-  grid-template-areas:
-    'projects announcements'
-    'projects trending';
+  align-items: flex-start;
 }
+
 .your-projects {
-  grid-area: projects;
+  flex: 3;
 }
 .project-cards {
   display: grid;
   grid-template-columns: repeat(2, minmax(350px, 1fr));
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
   gap: 15px;
   /* grid-template-areas:
     'project1 project2'2
@@ -152,17 +152,19 @@ button {
   justify-content: space-between;
   margin-top: 20px;
 }
+.sidebar-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .announcements {
-  grid-area: announcements;
   align-items: stretch;
 }
 .announce {
   background-color: rgb(234, 234, 234);
   border-bottom: 1px solid rgb(31, 31, 31);
-}
-.trending {
-  grid-area: trending;
 }
 
 .icons img {
